@@ -1,0 +1,45 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: violet; 
+    background-color: rgb(138, 36, 36); 
+    font-size: 35px;
+    padding: 20px;
+}
+h2 {
+    color: black; 
+    background-color: red;
+}
+
+h3 {
+    color: rgb(25, 125, 152); 
+    background-color: rgb(156, 200, 34);
+}
+
+h4 {
+    color: rgb(41, 14, 146); 
+    background-color: rgb(12, 146, 117);
+}
+h5 {
+    color: rgb(101, 16, 101); 
+    background-color: rgb(25, 54, 10); 
+    font-size: 35px;
+}
+h6 {
+    color: rgb(14, 21, 94); 
+    background-color: rgb(28, 169, 52); 
+    font-size: 35px;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+button {
+    color: white; 
+    background-color: brown; 
+    border-radius: 10px; 
+}
