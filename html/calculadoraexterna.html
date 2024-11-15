@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Externa</title>
+    <script src="../js/jsexterno.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo1">Tarea de Programaci&#243;n Web</h1>
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora 1</li>
+            <li>Calculadora 2</li>
+            <li>Calculadora 3</li>
+        </ul>    
+    </nav>
+    <section>
+        <label id="label1" for="numero1">N&#250;mero 1</label>
+        <input id="numero1">
+        <label id="label2" for="numero2">N&#250;mero 2</label>
+        <input id="numero2">
+
+        <br>
+        <!-- style.color es una propiedad a nivel de css , esto en javascript-->
+        <button onclick="cambiarColor('label1', 'blue')">Cambiar Color</button>
+        <button onclick="cambiarTamanio('label2', '50px')">Cambiar Tama&#241;o</button>
+        <button onclick="cambiarFuente1('label1', 'Arial')">Cambiar Fuente 1</button>
+        <button onclick="cambiarFuente2('label2', 'Calibri')">Cambiar Fuente 2</button>
+        <button onclick="cambiarTexto('label1', 'Texto Modificado')">Cambiar Texto</button>
+        <button onclick="agregarElemento('idmenu', '<l1>Calculadorra X</li>')">Agregar Elemento</button>
+        <button onclick="alinearTitulo('titulo1', 'right')">Alinear Titulo</button>
+        <button onclick="cambiarFondo('titulo1', 'yellow')">Cambiar Fondo</button>
+    </section>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interna Tarea</title>
+    <script>
+        function cambiarColor(idelemento, color){
+            document.getElementById(idelemento).style.color=color;
+        }
+        function cambiarTamanio(idelemento, tamanio){
+            document.getElementById(idelemento).style.fontSize=tamanio;
+        }
+        function cambiarFuente1(idelemento, fuente){
+            document.getElementById(idelemento).style.fontFamily=fuente;
+        }
+        function cambiarFuente2(idelemento, fuente){
+            document.getElementById(idelemento).style.fontFamily=fuente;
+        }
+        function cambiarTexto(idelemento, texto){
+            document.getElementById(idelemento).innerText=texto;
+        }
+        function agregarElemento(idelemento, elementohtml){
+            document.getElementById(idelemento).innerHTML=document.getElementById(idelemento).innerHTML+elementohtml;
+        }
+        function centrarTitulo(idelemento, alineacion){
+            document.getElementById(idelemento).style.textAlign=alineacion;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo1">Tarea de Programaci&#243;n Web</h1>
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora 1</li>
+            <li>Calculadora 2</li>
+            <li>Calculadora 3</li>
+        </ul>    
+    </nav>
+    <section>
+        <label id="label1" for="numero1">N&#250;mero 1</label>
+        <input id="numero1" type="number">
+        <label id="label2" for="numero2">N&#250;mero 2</label>
+        <input id="numero2" type="number">
+
+        <br>
+        <!-- style.color es una propiedad a nivel de css , esto en javascript-->
+        <button onclick="cambiarColor('label1', 'red')">Cambiar Color</button>
+        <button onclick="cambiarTamanio('label2', '80px')">Cambiar Tama&#241;o</button>
+        <button onclick="cambiarFuente1('label1', 'Arial')">Cambiar Fuente 1</button>
+        <button onclick="cambiarFuente2('label2', 'Calibri')">Cambiar Fuente 2</button>
+        <button onclick="cambiarTexto('label1', 'Texto Modificado')">Cambiar Texto</button>
+        <button onclick="agregarElemento('idmenu', '<li>Calculadora X</li>')">Agregar Elemento</button>
+        <button onclick="centrarTitulo('titulo1', 'center')">Centrar Titulo</button>
+    </section>
+    <footer></footer>
+</body>
+</html>
