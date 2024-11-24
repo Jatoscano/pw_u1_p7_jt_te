@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="../js/calculadora.js"></script>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div class="container">
+            <!--Primer hijo de Section - Container-->
+            <div class="calculadora">
+                <div id ='display' class="display">0</div>
+
+                <button id="numc" onclick="limpiar()">C</button>
+                <button onclick="borrar()">&larr;</button>
+                <button onclick="setOperacion('%')">%</button>
+    
+                <button onclick="setValor(7)">7</button>
+                <button onclick="setValor(8)">8</button>
+                <button onclick="setValor(9)">9</button>
+                <button onclick="setOperacion('X')">X</button>
+    
+                <button onclick="setValor(4)">4</button>
+                <button onclick="setValor(5)">5</button>
+                <button onclick="setValor(6)">6</button>
+                <button onclick="setOperacion('-')">-</button>
+    
+                <button onclick="setValorConcat(1)">1</button>
+                <button onclick="setValor(2)">2</button>
+                <button onclick="setValor(3)">3</button>
+                <button onclick="setOperacion('+')">+</button>
+    
+                <button id="num0" onclick="setValor(0)">0</button>
+                <button>.</button>
+                <button onclick="calcular()">=</button>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
