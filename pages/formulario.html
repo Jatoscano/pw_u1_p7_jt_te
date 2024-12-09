@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form @submit.prevent="guardarDatos">
+            <h2>Nueva Persona</h2>
+            <label for="idNombre">Nombre: </label>
+            <input type="text" v-model="nombre">
+            <br>
+            <label for="idApellido">Apellido: </label>
+            <input type="text" v-model="apellido">
+            <br>
+            <label for="idHobby">Hobby: </label>
+            <input type="text" v-model="hobby">
+            <br>
+            <label for="idNacimiento">Lugar de Nacimiento: </label>
+            <input type="text" v-model="nacimiento">
+            <br>
+            <button v-on:click="guardarDatos" v-show="nombre!==null">Guardar</button>
+
+            <ul>
+                <li v-for="miObjeto in listaObjetos">
+                        {{miObjeto.nombre}} - {{miObjeto.apellido}} - {{miObjeto.hobby}} - {{miObjeto.nacimiento}} 
+                </li>
+            </ul>
+            
+        </form>
+        
+    </div>
+    <script src="../js/appform.js"></script>
+</body>
+</html>
