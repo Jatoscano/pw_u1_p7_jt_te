@@ -11,7 +11,7 @@ const app = Vue.createApp({
         
         guardarDatos() {
 
-            if (this.nombre !== '' || this.apellido !== '' || this.hobby !== '' || this.nacimiento !== '') {
+            if (this.nombre && this.apellido && this.hobby && this.nacimiento) {
                 
                 console.log(this.nombre);
                 console.log(this.apellido);
@@ -26,15 +26,28 @@ const app = Vue.createApp({
                 };
 
             
-            this.listaObjetos.unshift(nuevosObjetos);
+            this.listaObjetos.push(nuevosObjetos);
 
             this.limpiaDatos();
             }
-            else{
-
-                alert('Por favor, rellene todos los campos');
+        },
+        
+        /*
+        guardarDatos() {
+            if (this.nombre && this.apellido && this.hobby && this.nacimiento) {
+                this.listaObjetos.push({
+                    nombre: this.nombre,
+                    apellido: this.apellido,
+                    hobby: this.hobby,
+                    nacimiento: this.nacimiento
+                });
+                this.nombre = '';
+                this.apellido = '';
+                this.hobby = '';
+                this.nacimiento = '';
             }
         },
+        */
 
         limpiaDatos() {
             this.nombre = '';
